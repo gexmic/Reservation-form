@@ -33,12 +33,15 @@
                     <label class="col-sm-3 control-label">Departure Date</label>
                     <div class="col-sm-4">
                         <!-- text box -->
+                        <asp:TextBox ID="TextDepartureDate" runat="server" TextMode="Date"
+                             CssClass="form-control"></asp:TextBox>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-sm-3 control-label">Number of people</label>
                     <div class="col-sm-4">
                         <!-- drop-down -->
+
                     </div>
                 </div>
                 <div class="form-group">
