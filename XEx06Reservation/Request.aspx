@@ -53,6 +53,11 @@
                     <label class="col-sm-3 control-label">Bed type</label>
                     <div class="col-sm-9 bedtype">
                         <!-- radio buttons -->
+                        <asp:RadioButtonList ID="RadioButtonList1" runat="server" RepeatDirection="Horizontal" >
+                            <asp:ListItem Selected="true">King</asp:ListItem>
+                            <asp:ListItem>Two Queens</asp:ListItem>
+                            <asp:ListItem>One Queen</asp:ListItem>
+                        </asp:RadioButtonList>
                     </div>
                 </div>
 
