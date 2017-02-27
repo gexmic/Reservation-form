@@ -40,8 +40,13 @@
                 <div class="form-group">
                     <label class="col-sm-3 control-label">Number of people</label>
                     <div class="col-sm-4">
-                        <!-- drop-down -->
-
+                        <!-- drop-down -->     
+                        <asp:DropDownList ID="DropDownList1" runat="server" CssClass="form-control">
+                            <asp:ListItem>1</asp:ListItem>
+                            <asp:ListItem>2</asp:ListItem>
+                            <asp:ListItem>3</asp:ListItem>
+                            <asp:ListItem>4</asp:ListItem>
+                        </asp:DropDownList>
                     </div>
                 </div>
                 <div class="form-group">

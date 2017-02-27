@@ -38,3 +38,23 @@ Z:\prog1025-asp\~assets\aspnet46_cs\Instructors\Extra exercises\exercises_extra\
 Z:\prog1025-asp\~assets\aspnet46_cs\Instructors\Extra exercises\exercises_extra\XEx06Reservation\XEx06Reservation\obj\Debug\XEx06Reservation.csprojResolveAssemblyReference.cache
 Z:\prog1025-asp\~assets\aspnet46_cs\Instructors\Extra exercises\exercises_extra\XEx06Reservation\XEx06Reservation\obj\Debug\XEx06Reservation.dll
 Z:\prog1025-asp\~assets\aspnet46_cs\Instructors\Extra exercises\exercises_extra\XEx06Reservation\XEx06Reservation\obj\Debug\XEx06Reservation.pdb
+C:\Users\michael\Desktop\gaming experience development\ado.net\XEx06Reservation\XEx06Reservation\bin\roslyn\csc.exe
+C:\Users\michael\Desktop\gaming experience development\ado.net\XEx06Reservation\XEx06Reservation\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\michael\Desktop\gaming experience development\ado.net\XEx06Reservation\XEx06Reservation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\michael\Desktop\gaming experience development\ado.net\XEx06Reservation\XEx06Reservation\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\michael\Desktop\gaming experience development\ado.net\XEx06Reservation\XEx06Reservation\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\michael\Desktop\gaming experience development\ado.net\XEx06Reservation\XEx06Reservation\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\michael\Desktop\gaming experience development\ado.net\XEx06Reservation\XEx06Reservation\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\michael\Desktop\gaming experience development\ado.net\XEx06Reservation\XEx06Reservation\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\michael\Desktop\gaming experience development\ado.net\XEx06Reservation\XEx06Reservation\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\michael\Desktop\gaming experience development\ado.net\XEx06Reservation\XEx06Reservation\bin\roslyn\vbc.exe
+C:\Users\michael\Desktop\gaming experience development\ado.net\XEx06Reservation\XEx06Reservation\bin\roslyn\VBCSCompiler.exe
+C:\Users\michael\Desktop\gaming experience development\ado.net\XEx06Reservation\XEx06Reservation\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\michael\Desktop\gaming experience development\ado.net\XEx06Reservation\XEx06Reservation\bin\XEx06Reservation.dll.config
+C:\Users\michael\Desktop\gaming experience development\ado.net\XEx06Reservation\XEx06Reservation\bin\XEx06Reservation.dll
+C:\Users\michael\Desktop\gaming experience development\ado.net\XEx06Reservation\XEx06Reservation\bin\XEx06Reservation.pdb
+C:\Users\michael\Desktop\gaming experience development\ado.net\XEx06Reservation\XEx06Reservation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\michael\Desktop\gaming experience development\ado.net\XEx06Reservation\XEx06Reservation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\michael\Desktop\gaming experience development\ado.net\XEx06Reservation\XEx06Reservation\obj\Debug\XEx06Reservation.csprojResolveAssemblyReference.cache
+C:\Users\michael\Desktop\gaming experience development\ado.net\XEx06Reservation\XEx06Reservation\obj\Debug\XEx06Reservation.dll
+C:\Users\michael\Desktop\gaming experience development\ado.net\XEx06Reservation\XEx06Reservation\obj\Debug\XEx06Reservation.pdb
