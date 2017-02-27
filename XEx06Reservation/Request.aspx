@@ -79,24 +79,32 @@
                     <label class="col-sm-3 control-label">Last Name</label>
                     <div class="col-sm-4">
                         <!-- text box -->
+                        <asp:TextBox ID="txtLastName" runat="server" CssClass="form-control"></asp:TextBox>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-sm-3 control-label">Email address</label>
                     <div class="col-sm-4">
                         <!-- text box -->
+                        <asp:TextBox ID="txtEmailAddress" runat="server" CssClass="form-control"></asp:TextBox>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-sm-3 control-label">Telephone number</label>
                     <div class="col-sm-4">
                         <!-- text box -->
+                        <asp:TextBox ID="txtTelephoneNumber" runat="server" CssClass="form-control"></asp:TextBox>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-sm-3 control-label">Preferred method</label>
                     <div class="col-sm-4">
                         <!-- drop down -->
+                        <asp:DropDownList ID="DropDownListPrefferred" runat="server" CssClass="form-control">
+                            <asp:ListItem>Email</asp:ListItem>
+                            <asp:ListItem>Telephone</asp:ListItem>
+                        </asp:DropDownList>
+
                     </div>
                 </div>
 
