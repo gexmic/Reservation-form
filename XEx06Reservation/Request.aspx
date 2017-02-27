@@ -65,7 +65,7 @@
                 <div class="form-group">
                     <div class="col-sm-7">
                         <!-- multiline text box -->
-                    </div>
+                        <textarea id="TextArea1" cols="60" name="S1" rows="4"></textarea></div>
                 </div>
 
                 <h3>Contact information</h3>
