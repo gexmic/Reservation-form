@@ -34,7 +34,11 @@
                         <asp:RequiredFieldValidator ID="rfvArrivalDate" runat="server"
                             CssClass="text-danger"
                             Display="Dynamic" ControlToValidate="txtArrivalDate">*</asp:RequiredFieldValidator>
+                        <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="CompareValidator" Operator="DataTypeCheck" Type="Date" 
+                            ControlToValidate="txtArrivalDate" Display="Dynamic" CssClass="text-danger">
+                        </asp:CompareValidator>
                     </div>
+
                 </div>
                 <div class="form-group">
                     <label class="col-sm-3 control-label">Departure Date</label>
@@ -47,6 +51,11 @@
                         <asp:RequiredFieldValidator ID="rfvDepartureDate" runat="server"
                             CssClass="text-danger"
                             Display="Dynamic" ControlToValidate="txtDepartureDate">*</asp:RequiredFieldValidator>
+                        <asp:CompareValidator ID="CompareValidator2" runat="server" ErrorMessage="CompareValidator"
+                            ControlToCompare="txtArrivalDate" ControlToValidate="txtDepartureDate" 
+                            Type="Date" Operator="GreaterThanEqual" CssClass="text-danger" Display="Dynamic">
+
+                        </asp:CompareValidator>
                     </div>
                 </div>
                 <div class="form-group">
@@ -116,6 +125,11 @@
                         <asp:RequiredFieldValidator ID="rfvEmail" runat="server"
                             CssClass="text-danger"
                             Display="Dynamic" ControlToValidate="txtEmailAddress">*</asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtEmailAddress"
+                             ErrorMessage="RegularExpressionValidator" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" 
+                            Display="Dynamic" CssClass="text-danger">
+
+                        </asp:RegularExpressionValidator>
                     </div>
                 </div>
                 <div class="form-group">
@@ -128,6 +142,11 @@
                         <asp:RequiredFieldValidator ID="rfvTelephone" runat="server"
                             CssClass="text-danger"
                             Display="Dynamic" ControlToValidate="txtTelephoneNumber">*</asp:RequiredFieldValidator>
+                         <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="txtTelephoneNumber"
+                              ErrorMessage="RegularExpressionValidator" ValidationExpression="((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}"
+                             Display="Dynamic" CssClass="text-danger">
+
+                         </asp:RegularExpressionValidator>
                     </div>
                 </div>
                 <div class="form-group">
