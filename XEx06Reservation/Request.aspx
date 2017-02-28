@@ -34,7 +34,11 @@
                         <asp:RequiredFieldValidator ID="rfvArrivalDate" runat="server"
                             CssClass="text-danger"
                             Display="Dynamic" ControlToValidate="txtArrivalDate">*</asp:RequiredFieldValidator>
+                        <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="CompareValidator" Operator="DataTypeCheck" Type="Date" 
+                            ControlToValidate="txtArrivalDate">
+                        </asp:CompareValidator>
                     </div>
+
                 </div>
                 <div class="form-group">
                     <label class="col-sm-3 control-label">Departure Date</label>
@@ -47,6 +51,11 @@
                         <asp:RequiredFieldValidator ID="rfvDepartureDate" runat="server"
                             CssClass="text-danger"
                             Display="Dynamic" ControlToValidate="txtDepartureDate">*</asp:RequiredFieldValidator>
+                        <asp:CompareValidator ID="CompareValidator2" runat="server" ErrorMessage="CompareValidator"
+                            ControlToCompare="txtArrivalDate" ControlToValidate="txtDepartureDate" 
+                            Type="Date" Operator="GreaterThanEqual">
+
+                        </asp:CompareValidator>
                     </div>
                 </div>
                 <div class="form-group">
