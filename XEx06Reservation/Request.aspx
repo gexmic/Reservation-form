@@ -25,7 +25,7 @@
                 <div class="form-group">
                     <label class="col-sm-3 control-label">Arrival Date</label>
                     <div class="col-sm-4">
-                        <asp:TextBox ID="txtArrivalDate" runat="server" TextMode="Date"
+                        <asp:TextBox ID="txtArrivalDate" runat="server" TextMode="DateTime"
                              CssClass="form-control"></asp:TextBox>
                     </div>
                 </div>
@@ -54,7 +54,7 @@
                     <div class="col-sm-9 bedtype">
                         <!-- radio buttons -->
                         <asp:RadioButtonList ID="RadioButtonList1" runat="server" RepeatDirection="Horizontal" >
-                            <asp:ListItem Selected="true">King</asp:ListItem>
+                            <asp:ListItem>King</asp:ListItem>
                             <asp:ListItem>Two Queens</asp:ListItem>
                             <asp:ListItem>One Queen</asp:ListItem>
                         </asp:RadioButtonList>

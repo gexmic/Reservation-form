@@ -14,7 +14,12 @@ namespace XEx06Reservation
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                txtArrivalDate.Text = currentDate;
+                lblYear.Text = currentYear;
+                RadioButtonList1.SelectedIndex = 0;
+            }
         }
 
         private void DisplayReservation()
