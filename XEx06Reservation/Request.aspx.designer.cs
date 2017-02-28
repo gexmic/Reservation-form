@@ -31,13 +31,13 @@ namespace XEx06Reservation {
         protected global::System.Web.UI.WebControls.TextBox txtArrivalDate;
         
         /// <summary>
-        /// TextDepartureDate control.
+        /// txtDepartureDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextDepartureDate;
+        protected global::System.Web.UI.WebControls.TextBox txtDepartureDate;
         
         /// <summary>
         /// DropDownList1 control.
@@ -56,6 +56,15 @@ namespace XEx06Reservation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList1;
+        
+        /// <summary>
+        /// TextAreaSpecialRequest control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea TextAreaSpecialRequest;
         
         /// <summary>
         /// txtFirstName control.

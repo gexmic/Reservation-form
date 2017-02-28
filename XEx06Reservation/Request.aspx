@@ -33,7 +33,7 @@
                     <label class="col-sm-3 control-label">Departure Date</label>
                     <div class="col-sm-4">
                         <!-- text box -->
-                        <asp:TextBox ID="TextDepartureDate" runat="server" TextMode="Date"
+                        <asp:TextBox ID="txtDepartureDate" runat="server" TextMode="Date"
                              CssClass="form-control"></asp:TextBox>
                     </div>
                 </div>
@@ -54,7 +54,7 @@
                     <div class="col-sm-9 bedtype">
                         <!-- radio buttons -->
                         <asp:RadioButtonList ID="RadioButtonList1" runat="server" RepeatDirection="Horizontal" >
-                            <asp:ListItem Selected="true">King</asp:ListItem>
+                            <asp:ListItem>King</asp:ListItem>
                             <asp:ListItem>Two Queens</asp:ListItem>
                             <asp:ListItem>One Queen</asp:ListItem>
                         </asp:RadioButtonList>
@@ -65,7 +65,7 @@
                 <div class="form-group">
                     <div class="col-sm-7">
                         <!-- multiline text box -->
-                        <textarea id="TextArea1" cols="60" name="S1" rows="4"></textarea></div>
+                        <textarea id="TextAreaSpecialRequest" cols="60" name="S1" rows="4" runat="server"></textarea></div>
                 </div>
 
                 <h3>Contact information</h3>
@@ -112,9 +112,9 @@
                 <div class="form-group">
                     <div class="col-sm-offset-3 col-sm-9">
                         <asp:Button ID="btnSubmit" runat="server" Text="Submit"
-                             CssClass="btn btn-primary"  />
+                             CssClass="btn btn-primary" OnClick="btnSubmit_Click"  />
                         <asp:Button ID="btnClear" runat="server" Text="Clear"
-                             CssClass="btn btn-primary"  />
+                             CssClass="btn btn-primary" OnClick="btnClear_Click1"  />
                     </div>
                 </div> 
             
