@@ -41,6 +41,9 @@ namespace XEx06Reservation
             // todo
         }
 
-
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+            lblMessage.Text = "Thank you for your request. We will get back to you within 24 hours.";
+        }
     }
 }

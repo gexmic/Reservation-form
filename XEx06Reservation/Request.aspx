@@ -25,7 +25,7 @@
                 <div class="form-group">
                     <label class="col-sm-3 control-label">Arrival Date</label>
                     <div class="col-sm-4">
-                        <asp:TextBox ID="txtArrivalDate" runat="server" TextMode="DateTime"
+                        <asp:TextBox ID="txtArrivalDate" runat="server" TextMode="Date"
                              CssClass="form-control"></asp:TextBox>
                     </div>
                 </div>
@@ -112,7 +112,7 @@
                 <div class="form-group">
                     <div class="col-sm-offset-3 col-sm-9">
                         <asp:Button ID="btnSubmit" runat="server" Text="Submit"
-                             CssClass="btn btn-primary"  />
+                             CssClass="btn btn-primary" OnClick="btnSubmit_Click"  />
                         <asp:Button ID="btnClear" runat="server" Text="Clear"
                              CssClass="btn btn-primary"  />
                     </div>
