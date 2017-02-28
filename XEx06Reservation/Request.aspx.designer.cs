@@ -22,6 +22,15 @@ namespace XEx06Reservation {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// ValidationSummary control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary;
+        
+        /// <summary>
         /// txtArrivalDate control.
         /// </summary>
         /// <remarks>
@@ -31,6 +40,15 @@ namespace XEx06Reservation {
         protected global::System.Web.UI.WebControls.TextBox txtArrivalDate;
         
         /// <summary>
+        /// rfvArrivalDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvArrivalDate;
+        
+        /// <summary>
         /// txtDepartureDate control.
         /// </summary>
         /// <remarks>
@@ -38,6 +56,15 @@ namespace XEx06Reservation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtDepartureDate;
+        
+        /// <summary>
+        /// rfvDepartureDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvDepartureDate;
         
         /// <summary>
         /// DropDownList1 control.
@@ -76,6 +103,15 @@ namespace XEx06Reservation {
         protected global::System.Web.UI.WebControls.TextBox txtFirstName;
         
         /// <summary>
+        /// rfvFirstName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvFirstName;
+        
+        /// <summary>
         /// txtLastName control.
         /// </summary>
         /// <remarks>
@@ -83,6 +119,15 @@ namespace XEx06Reservation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtLastName;
+        
+        /// <summary>
+        /// rfvLastName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvLastName;
         
         /// <summary>
         /// txtEmailAddress control.
@@ -94,6 +139,15 @@ namespace XEx06Reservation {
         protected global::System.Web.UI.WebControls.TextBox txtEmailAddress;
         
         /// <summary>
+        /// rfvEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvEmail;
+        
+        /// <summary>
         /// txtTelephoneNumber control.
         /// </summary>
         /// <remarks>
@@ -101,6 +155,15 @@ namespace XEx06Reservation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtTelephoneNumber;
+        
+        /// <summary>
+        /// rfvTelephone control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvTelephone;
         
         /// <summary>
         /// DropDownListPrefferred control.

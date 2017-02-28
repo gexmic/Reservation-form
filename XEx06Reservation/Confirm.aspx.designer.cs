@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace XEx08Reservation {
+namespace XEx06Reservation {
     
     
     public partial class Confirm {
