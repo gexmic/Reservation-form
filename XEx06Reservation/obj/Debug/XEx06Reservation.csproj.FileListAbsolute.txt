@@ -53,8 +53,9 @@ C:\Users\michael\Desktop\gaming experience development\ado.net\XEx06Reservation\
 C:\Users\michael\Desktop\gaming experience development\ado.net\XEx06Reservation\XEx06Reservation\bin\XEx06Reservation.dll.config
 C:\Users\michael\Desktop\gaming experience development\ado.net\XEx06Reservation\XEx06Reservation\bin\XEx06Reservation.dll
 C:\Users\michael\Desktop\gaming experience development\ado.net\XEx06Reservation\XEx06Reservation\bin\XEx06Reservation.pdb
+C:\Users\michael\Desktop\gaming experience development\ado.net\XEx06Reservation\XEx06Reservation\bin\AspNet.ScriptManager.jQuery.dll
 C:\Users\michael\Desktop\gaming experience development\ado.net\XEx06Reservation\XEx06Reservation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\michael\Desktop\gaming experience development\ado.net\XEx06Reservation\XEx06Reservation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\michael\Desktop\gaming experience development\ado.net\XEx06Reservation\XEx06Reservation\obj\Debug\XEx06Reservation.csprojResolveAssemblyReference.cache
 C:\Users\michael\Desktop\gaming experience development\ado.net\XEx06Reservation\XEx06Reservation\obj\Debug\XEx06Reservation.dll
 C:\Users\michael\Desktop\gaming experience development\ado.net\XEx06Reservation\XEx06Reservation\obj\Debug\XEx06Reservation.pdb
-C:\Users\michael\Desktop\gaming experience development\ado.net\XEx06Reservation\XEx06Reservation\bin\AspNet.ScriptManager.jQuery.dll

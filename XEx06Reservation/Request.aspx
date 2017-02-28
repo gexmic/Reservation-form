@@ -62,7 +62,7 @@
                     <label class="col-sm-3 control-label">Number of people</label>
                     <div class="col-sm-4">
                         <!-- drop-down -->
-                        <asp:DropDownList ID="DropDownList1" runat="server" CssClass="form-control">
+                        <asp:DropDownList ID="DropDownListNumOfPeople" runat="server" CssClass="form-control">
                             <asp:ListItem>1</asp:ListItem>
                             <asp:ListItem>2</asp:ListItem>
                             <asp:ListItem>3</asp:ListItem>
@@ -74,7 +74,7 @@
                     <label class="col-sm-3 control-label">Bed type</label>
                     <div class="col-sm-9 bedtype">
                         <!-- radio buttons -->
-                        <asp:RadioButtonList ID="RadioButtonList1" runat="server" RepeatDirection="Horizontal">
+                        <asp:RadioButtonList ID="RadioButtonListBed" runat="server" RepeatDirection="Horizontal">
                             <asp:ListItem>King</asp:ListItem>
                             <asp:ListItem>Two Queens</asp:ListItem>
                             <asp:ListItem>One Queen</asp:ListItem>
@@ -86,7 +86,7 @@
                 <div class="form-group">
                     <div class="col-sm-7">
                         <!-- multiline text box -->
-                        <textarea id="TextAreaSpecialRequest" cols="60" name="S1" rows="4" runat="server"></textarea>
+                       <asp:TextBox  TextMode="MultiLine"  id="TextAreaSpecialRequest" Columns="60" name="S1" Rows="4" runat="server"></asp:TextBox>
                     </div>
                 </div>
 

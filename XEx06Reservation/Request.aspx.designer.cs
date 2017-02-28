@@ -85,22 +85,22 @@ namespace XEx06Reservation {
         protected global::System.Web.UI.WebControls.CompareValidator CompareValidator2;
         
         /// <summary>
-        /// DropDownList1 control.
+        /// DropDownListNumOfPeople control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownListNumOfPeople;
         
         /// <summary>
-        /// RadioButtonList1 control.
+        /// RadioButtonListBed control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList1;
+        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonListBed;
         
         /// <summary>
         /// TextAreaSpecialRequest control.
@@ -109,7 +109,7 @@ namespace XEx06Reservation {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea TextAreaSpecialRequest;
+        protected global::System.Web.UI.WebControls.TextBox TextAreaSpecialRequest;
         
         /// <summary>
         /// txtFirstName control.

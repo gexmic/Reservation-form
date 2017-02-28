@@ -11,11 +11,13 @@ public class Reservation
     public int NoOfDays { get; set; }
     public int NoOfPeople { get; set; }
     public string BedType { get; set; }
+    public int bedTypeNum { get; set; }
     public string SpecialRequests { get; set; }
     public string FirstName { get; set; }
     public string LastName { get; set; }
     public string Email { get; set; }
     public string Phone { get; set; }
     public string PreferredMethod { get; set; }
+    public int PrefferedMethodNum { get; set; }
 }
 
