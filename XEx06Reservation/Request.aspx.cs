@@ -18,36 +18,39 @@ namespace XEx06Reservation
         {
             if (!IsPostBack)
             {
+                reservation = (Reservation)Session["Reservation"];
                 txtArrivalDate.Text = currentDate;
                 lblYear.Text = currentYear;
                 RadioButtonListBed.SelectedIndex = 0;
+                DisplayReservation();
             }
             if (IsPostBack)
             {
                 DisplayReservation();
             }
         }
-
+       
         private void DisplayReservation()
         {
-            
+            if (reservation != null)
+            {
+                // get current info from session state
+                Reservation reservation = (Reservation)Session["Reservation"];
 
-            // get current info from session state
-            Reservation reservation = (Reservation)Session["Reservation"];
+                // populate fields on form
+                txtArrivalDate.Text = reservation.ArrivalDate.ToShortDateString();
 
-            // populate fields on form
-            txtArrivalDate.Text = reservation.ArrivalDate.ToShortDateString();
-
-            // todo rest of fields on form
-            txtDepartureDate.Text = reservation.DepartureDate.ToShortDateString();
-            DropDownListNumOfPeople.SelectedIndex = reservation.NoOfPeople - 1;
-            RadioButtonListBed.SelectedIndex = reservation.bedTypeNum;
-            TextAreaSpecialRequest.Text = reservation.SpecialRequests;
-            txtFirstName.Text = reservation.FirstName;
-            txtLastName.Text = reservation.LastName;
-            txtEmailAddress.Text = reservation.Email;
-            txtTelephoneNumber.Text = reservation.Phone;
-            DropDownListPrefferred.SelectedIndex = reservation.PrefferedMethodNum;
+                // todo rest of fields on form
+                txtDepartureDate.Text = reservation.DepartureDate.ToShortDateString();
+                DropDownListNumOfPeople.SelectedIndex = reservation.NoOfPeople - 1;
+                RadioButtonListBed.SelectedIndex = reservation.bedTypeNum;
+                TextAreaSpecialRequest.Text = reservation.SpecialRequests;
+                txtFirstName.Text = reservation.FirstName;
+                txtLastName.Text = reservation.LastName;
+                txtEmailAddress.Text = reservation.Email;
+                txtTelephoneNumber.Text = reservation.Phone;
+                DropDownListPrefferred.SelectedIndex = reservation.PrefferedMethodNum;
+            }
 
 
 
@@ -61,9 +64,12 @@ namespace XEx06Reservation
 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
-            lblMessage.Text = "Thank you for your request. We will get back to you within 24 hours.";
-            GetCustomerData();
-            Response.Redirect("~/Confirmation.aspx");
+            if (IsValid)
+            {
+                lblMessage.Text = "Thank you for your request. We will get back to you within 24 hours.";
+                GetCustomerData();
+                Response.Redirect("~/Confirmation.aspx");
+            }
         }
 
         protected void btnClear_Click1(object sender, EventArgs e)
@@ -86,10 +92,10 @@ namespace XEx06Reservation
             if (reservation == null)
                 reservation = new Reservation();
             
-            reservation.ArrivalDate = Convert.ToDateTime(txtArrivalDate);
-            reservation.DepartureDate = Convert.ToDateTime(txtDepartureDate);
+           // reservation.ArrivalDate = Convert.ToDateTime(txtArrivalDate);
+            //reservation.DepartureDate = Convert.ToDateTime(txtDepartureDate);
             reservation.NoOfDays = NumberOfDay();
-            reservation.NoOfPeople = Convert.ToInt16(DropDownListNumOfPeople.SelectedIndex - 1);
+            reservation.NoOfPeople = Convert.ToInt16(DropDownListNumOfPeople.SelectedIndex + 1);
             reservation.BedType = RadioButtonListBed.SelectedValue;
             reservation.bedTypeNum = RadioButtonListBed.SelectedIndex;
             reservation.SpecialRequests = TextAreaSpecialRequest.Text;
@@ -98,17 +104,17 @@ namespace XEx06Reservation
             reservation.Email = txtEmailAddress.Text;
             reservation.Phone = txtTelephoneNumber.Text;
             reservation.PreferredMethod = DropDownListPrefferred.Text;
-            reservation.PrefferedMethodNum = DropDownListPrefferred.SelectedIndex;
+            reservation.PrefferedMethodNum = Convert.ToInt16(DropDownListPrefferred.SelectedIndex + 1 );
 
             Session["Reservation"] = reservation;
         }
 
         private int NumberOfDay()
         {
-            DateTime arrivalDate = Convert.ToDateTime(txtArrivalDate);
-            DateTime departureDate = Convert.ToDateTime(txtDepartureDate);
+            DateTime arrivalDate = Convert.ToDateTime(txtArrivalDate.Text);
+            DateTime departureDate = Convert.ToDateTime(txtDepartureDate.Text);
 
-            int numberOfDay = (arrivalDate - departureDate).Days;
+            int numberOfDay = (departureDate - arrivalDate).Days;
             return numberOfDay;
         }
     }

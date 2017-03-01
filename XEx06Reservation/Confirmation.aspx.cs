@@ -8,9 +8,47 @@ using System.Web.UI.WebControls;
 namespace XEx06Reservation
 {
     public partial class Confirmation : System.Web.UI.Page
+
     {
+        private string currentYear = DateTime.Today.Year.ToString();
+
         protected void Page_Load(object sender, EventArgs e)
         {
+            DisplayReservation();
+        }
+
+        protected void btnConfirmRequest_Click(object sender, EventArgs e)
+        {
+            lblMessage.Text = "Thank you for your resquest.\nWe will get back to you within 24 hours.";
+        }
+
+        protected void btnModifyRequest_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Request.aspx");
+        }
+
+        private void DisplayReservation()
+        {
+
+
+            // get current info from session state
+            Reservation reservation = (Reservation)Session["Reservation"];
+
+            lblFirstName.Text = reservation.FirstName;
+            lblLastName.Text = reservation.LastName;
+            lblEmail.Text = reservation.Email;
+            lblPhone.Text = reservation.Phone;
+            lblPreferedMethode.Text = reservation.PreferredMethod;
+
+          
+            lblArrivalDate.Text = reservation.ArrivalDate.ToShortDateString();
+            lblDepartureDate.Text = reservation.DepartureDate.ToShortDateString();
+            lblNoOfDay.Text = reservation.NoOfDays.ToString();
+            lblNoOfPeople.Text = reservation.NoOfPeople.ToString();
+            lblBedType.Text = reservation.BedType;
+            lblSpecialRequests.Text = reservation.SpecialRequests;
+
+            lblYear.Text = currentYear;
 
         }
     }
