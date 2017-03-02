@@ -18,6 +18,19 @@ namespace XEx06Reservation
         {
             if (!IsPostBack)
             {
+                if(reservation == null)
+                {
+                    // using cookies to retrive information about the user
+
+                    if (Request.Cookies["userInfo"] != null)
+                    {
+                        txtFirstName.Text = Server.HtmlEncode(Request.Cookies["userInfo"]["userFirstName"]);
+                    }
+                    if (Request.Cookies["userInfo"]["userEmail"] != null)
+                    {
+                        txtEmailAddress.Text = Server.HtmlEncode(Request.Cookies["userInfo"]["userEmail"]);
+                    }
+                }
                 reservation = (Reservation)Session["Reservation"];
                 txtArrivalDate.Text = currentDate;
                 lblYear.Text = currentYear;
