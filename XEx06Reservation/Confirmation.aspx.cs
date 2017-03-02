@@ -1,4 +1,19 @@
-﻿using System;
+﻿///////////////////////////////////////////////////////////////////////
+// File:  Assignment 3
+//
+// Author: Michael Landry
+// This assignment represents my own work and is in accordance with the College Academic Policy
+//
+// Copyright (c) 2017 All Right Reserved by Michael Landry
+// Contributors: 
+// Description:  
+//
+// Date: March 02 2017
+// Revisions:
+//
+/////////////////////////////////////////////////////////////////////
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -20,6 +35,7 @@ namespace XEx06Reservation
         {
             lblMessage.Text = "Thank you for your resquest.\nWe will get back to you within 24 hours.";
             
+            // set the cookie for the user first name and is email
             HttpCookie cookie = new HttpCookie("userInfo");
             cookie.Values["userFirstName"] =  lblFirstName.Text;
             cookie.Values["userEmail"] = lblEmail.Text;
@@ -40,7 +56,7 @@ namespace XEx06Reservation
 
             // get current info from session state
             Reservation reservation = (Reservation)Session["Reservation"];
-
+            // set all the lable whit the data in the Session
             lblFirstName.Text = reservation.FirstName;
             lblLastName.Text = reservation.LastName;
             lblEmail.Text = reservation.Email;

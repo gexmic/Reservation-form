@@ -1,7 +1,23 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="Request.aspx.cs" Inherits="XEx06Reservation.Request" %>
+﻿<!--
+///////////////////////////////////////////////////////////////////////
+// File:  Assignment 3 
+//
+// Author: Michael Landry
+// This assignment represents my own work and is in accordance with the College Academic Policy
+//
+// Copyright (c) 2017 All Right Reserved by Michael Landry
+// Contributors: 
+// Description:  
+//
+// Date: March 02 2017
+// Revisions:
+//
+/////////////////////////////////////////////////////////////////////
+    -->
+
+<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="Request.aspx.cs" Inherits="XEx06Reservation.Request" %>
 
 <%@ MasterType VirtualPath="~/Site.Master" %>
-
 
 <asp:Content ID="mainContent" ContentPlaceHolderID="mainPlaceHolder" runat="server">
 
@@ -20,7 +36,7 @@
             <asp:RequiredFieldValidator ID="rfvArrivalDate" runat="server"
                 CssClass="text-danger"
                 Display="Dynamic" ControlToValidate="txtArrivalDate">*</asp:RequiredFieldValidator>
-            <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="CompareValidator" Operator="DataTypeCheck" Type="Date"
+            <asp:CompareValidator ID="CompareValidator1" runat="server" Operator="DataTypeCheck" Type="Date"
                 ControlToValidate="txtArrivalDate" Display="Dynamic" CssClass="text-danger">
             </asp:CompareValidator>
         </div>
@@ -37,9 +53,9 @@
             <asp:RequiredFieldValidator ID="rfvDepartureDate" runat="server"
                 CssClass="text-danger"
                 Display="Dynamic" ControlToValidate="txtDepartureDate">*</asp:RequiredFieldValidator>
-            <asp:CompareValidator ID="CompareValidator2" runat="server" ErrorMessage="CompareValidator"
+            <asp:CompareValidator ID="CompareValidator2" runat="server"
                 ControlToCompare="txtArrivalDate" ControlToValidate="txtDepartureDate"
-                Type="Date" Operator="GreaterThanEqual" CssClass="text-danger" Display="Dynamic">
+                Type="Date" Operator="GreaterThanEqual" CssClass="text-danger" Display="Dynamic">Departure Date could not be before Arrival Date
 
             </asp:CompareValidator>
         </div>
@@ -112,8 +128,8 @@
                 CssClass="text-danger"
                 Display="Dynamic" ControlToValidate="txtEmailAddress">*</asp:RequiredFieldValidator>
             <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtEmailAddress"
-                ErrorMessage="RegularExpressionValidator" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"
-                Display="Dynamic" CssClass="text-danger">
+                ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"
+                Display="Dynamic" CssClass="text-danger">Email should be in this format xx@xx.xx
 
             </asp:RegularExpressionValidator>
         </div>
@@ -129,8 +145,8 @@
                 CssClass="text-danger"
                 Display="Dynamic" ControlToValidate="txtTelephoneNumber">*</asp:RequiredFieldValidator>
             <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="txtTelephoneNumber"
-                ErrorMessage="RegularExpressionValidator" ValidationExpression="((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}"
-                Display="Dynamic" CssClass="text-danger">
+                ValidationExpression="((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}"
+                Display="Dynamic" CssClass="text-danger">formate 999-999-9999
 
             </asp:RegularExpressionValidator>
         </div>

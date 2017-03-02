@@ -1,5 +1,21 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="XEx06Reservation.Site" %>
+﻿<!--
+///////////////////////////////////////////////////////////////////////
+// File:  Assignment 3 
+//
+// Author: Michael Landry
+// This assignment represents my own work and is in accordance with the College Academic Policy
+//
+// Copyright (c) 2017 All Right Reserved by Michael Landry
+// Contributors: 
+// Description:  
+//
+// Date: March 02 2017
+// Revisions:
+//
+/////////////////////////////////////////////////////////////////////
+    -->
 
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="XEx06Reservation.Site" %>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
