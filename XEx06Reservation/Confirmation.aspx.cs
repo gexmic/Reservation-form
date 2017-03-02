@@ -20,6 +20,14 @@ namespace XEx06Reservation
         protected void btnConfirmRequest_Click(object sender, EventArgs e)
         {
             lblMessage.Text = "Thank you for your resquest.\nWe will get back to you within 24 hours.";
+            
+            HttpCookie cookie = new HttpCookie("userInfo");
+            cookie.Values["userFirstName"] =  lblFirstName.Text;
+            cookie.Values["userEmail"] = lblEmail.Text;
+            cookie.Expires = DateTime.Now.AddMonths(6);
+
+            Response.Cookies.Add(cookie);
+
         }
 
         protected void btnModifyRequest_Click(object sender, EventArgs e)

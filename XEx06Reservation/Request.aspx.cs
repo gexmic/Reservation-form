@@ -18,6 +18,16 @@ namespace XEx06Reservation
         {
             if (!IsPostBack)
             {
+                if(reservation == null)
+                {
+                    // using cookies to retrive information about the user
+
+                    if (Request.Cookies["userInfo"] != null)
+                    {
+                        txtFirstName.Text = Server.HtmlEncode(Request.Cookies["userInfo"]["userFirstName"]);                  
+                        txtEmailAddress.Text = Server.HtmlEncode(Request.Cookies["userInfo"]["userEmail"]);
+                    }
+                }
                 reservation = (Reservation)Session["Reservation"];
                 txtArrivalDate.Text = currentDate;
                 lblYear.Text = currentYear;
@@ -83,7 +93,12 @@ namespace XEx06Reservation
             txtLastName.Text = "";
             txtEmailAddress.Text = "";
             txtTelephoneNumber.Text = "";
-            DropDownListPrefferred.SelectedIndex = 0;
+            DropDownListPrefferred.SelectedIndex = 0;          
+
+            HttpCookie cookie = Request.Cookies["userInfo"];
+            cookie.Expires = DateTime.Now.AddDays(-1);
+
+            Response.Cookies.Add(cookie);
 
         }
 
