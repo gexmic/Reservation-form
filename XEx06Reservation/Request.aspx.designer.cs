@@ -13,15 +13,6 @@ namespace XEx06Reservation {
     public partial class Request {
         
         /// <summary>
-        /// form1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
-        /// <summary>
         /// ValidationSummary control.
         /// </summary>
         /// <remarks>
@@ -238,12 +229,15 @@ namespace XEx06Reservation {
         protected global::System.Web.UI.WebControls.Label lblMessage;
         
         /// <summary>
-        /// lblYear control.
+        /// Master property.
         /// </summary>
         /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
+        /// Auto-generated property.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblYear;
+        public new XEx06Reservation.Site Master {
+            get {
+                return ((XEx06Reservation.Site)(base.Master));
+            }
+        }
     }
 }
