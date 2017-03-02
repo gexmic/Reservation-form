@@ -10,7 +10,6 @@ namespace XEx06Reservation
     public partial class Confirmation : System.Web.UI.Page
 
     {
-        private string currentYear = DateTime.Today.Year.ToString();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -55,9 +54,6 @@ namespace XEx06Reservation
             lblNoOfPeople.Text = reservation.NoOfPeople.ToString();
             lblBedType.Text = reservation.BedType;
             lblSpecialRequests.Text = reservation.SpecialRequests;
-
-            lblYear.Text = currentYear;
-
         }
     }
 }

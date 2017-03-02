@@ -10,7 +10,7 @@ namespace XEx06Reservation
     public partial class Request : System.Web.UI.Page
     {
         private string currentDate = DateTime.Today.ToShortDateString();
-        private string currentYear = DateTime.Today.Year.ToString();
+       
 
         private Reservation reservation;
 
@@ -30,7 +30,7 @@ namespace XEx06Reservation
                 }
                 reservation = (Reservation)Session["Reservation"];
                 txtArrivalDate.Text = currentDate;
-                lblYear.Text = currentYear;
+                
                 RadioButtonListBed.SelectedIndex = 0;
                 DisplayReservation();
             }

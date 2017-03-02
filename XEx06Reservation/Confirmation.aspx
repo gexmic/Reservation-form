@@ -1,24 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Confirmation.aspx.cs" Inherits="XEx06Reservation.Confirmation" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Confirmation.aspx.cs" Inherits="XEx06Reservation.Confirmation" %>
+<%@ MasterType VirtualPath="~/Site.Master" %>
 
-<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Chapter 6: Reservations</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="Scripts/jquery-3.1.1.min.js"></script>
-    <script src="Scripts/bootstrap.min.js"></script>
-    <link href="Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="Content/site.css" rel="stylesheet" />
-</head>
-<body>
-    <div class="container">
-        <header class="jumbotron">
-            <img src="Images/logo.png" alt="Royal Inns and Suites" />
-        </header>
-
-        <main>
-            <form id="form1" runat="server" class="form-horizontal">
+<asp:Content ID="mainContent" ContentPlaceHolderID="mainPlaceHolder" runat="server">
                 <h1>Request Confirmation</h1>
 
                 <h3>Please confirm your reservation request</h3>
@@ -128,18 +112,5 @@
                     </div>
                 </div>
 
-            </form>
-        </main>
-
-        <footer>
-            <p>
-                &copy;
-                <asp:Label ID="lblYear" runat="server"></asp:Label>
-                Royal Inns and Suites
-            </p>
-        </footer>
-    </div>
-
-</body>
-</html>
+      </asp:Content>   
 
