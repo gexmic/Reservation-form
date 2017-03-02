@@ -24,10 +24,7 @@ namespace XEx06Reservation
 
                     if (Request.Cookies["userInfo"] != null)
                     {
-                        txtFirstName.Text = Server.HtmlEncode(Request.Cookies["userInfo"]["userFirstName"]);
-                    }
-                    if (Request.Cookies["userInfo"]["userEmail"] != null)
-                    {
+                        txtFirstName.Text = Server.HtmlEncode(Request.Cookies["userInfo"]["userFirstName"]);                  
                         txtEmailAddress.Text = Server.HtmlEncode(Request.Cookies["userInfo"]["userEmail"]);
                     }
                 }
@@ -96,7 +93,12 @@ namespace XEx06Reservation
             txtLastName.Text = "";
             txtEmailAddress.Text = "";
             txtTelephoneNumber.Text = "";
-            DropDownListPrefferred.SelectedIndex = 0;
+            DropDownListPrefferred.SelectedIndex = 0;          
+
+            HttpCookie cookie = Request.Cookies["userInfo"];
+            cookie.Expires = DateTime.Now.AddDays(-1);
+
+            Response.Cookies.Add(cookie);
 
         }
 
